@@ -6,9 +6,9 @@ sg.change_look_and_feel('DarkTeal12')    # look and feel theme
 
 
 # Designing layout
-layout = [[sg.Text("\t\t\tSelect_dataset   "),sg.Combo(['db1','db2', 'db3']),sg.Text("\n")],
+layout = [[sg.Text("\t\t\tSelect_dataset   "),sg.Combo(['Chronic Kidney Disease','Heart Disease', 'Iris', 'Zoo', 'Spambase']),sg.Text("\n")],
           [sg.Text("\t\t"),sg.Combo(["cluster size"], size=(5, 2)), sg.Text(""), sg.InputText(size=(20, 20), key='1'),sg.Button("START", size=(10, 2))],[sg.Text('\n')],
-          [sg.Text("\t\t  Method1 \t\tMethod2   \t\t  Method3\t\t     Method4")],
+          [sg.Text("\t\t  KMeans \t\tFCM   \t\t  FLICM\t\t     DFC")],
           [sg.Text('\tNCEI'), sg.In(key='11',size=(20,20)), sg.In(key='12',size=(20,20)), sg.In(key='13',size=(20,20)), sg.In(key='14',size=(20,20)),sg.Text("\n")],
           [sg.Text('\tARI'), sg.In(key='21',size=(20,20)), sg.In(key='22',size=(20,20)), sg.In(key='23',size=(20,20)), sg.In(key='24',size=(20,20)), sg.Text("\n")],
           [sg.Text('\tFM'), sg.In(key='31', size=(20, 20)), sg.In(key='32', size=(20, 20)),sg.In(key='33', size=(20, 20)), sg.In(key='34', size=(20, 20)),sg.Text("\n")],
